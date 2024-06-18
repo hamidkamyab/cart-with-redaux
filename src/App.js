@@ -1,10 +1,15 @@
 import * as Vsc from "react-icons/vsc";
+import Navbar from "./components/Navbar";
+import Products from "./components/Products";
+import Cart from "./components/Cart";
 
 function App() {
   return (
     <div className="App vh-100 d-flex flex-column justify-content-between">
       <div className="main">
-          محتوا
+          <Navbar />
+          <Products />
+          {/* <Cart /> */}
       </div>
 
       <div className="footer text-center py-3">
