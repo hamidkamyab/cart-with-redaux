@@ -21,9 +21,18 @@ body {
     list-style: none;
 }
 
+button:disabled {
+    filter: contrast(30%) brightness(150%);
+    cursor: not-allowed;
+}
+
 .navbar {
     background-color: var(--blue);
     color: var(--light);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 6;
 }
 
 .navbar a {
